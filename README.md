@@ -1,2 +1,1 @@
-# cmpt440Rimaldi-
-Formal Languages and Computability 
+# Formal Languages and Computability
