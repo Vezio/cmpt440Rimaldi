@@ -8,4 +8,4 @@
 
 ### 0 
 
-Basic repo. structure and setup. Java setup and Java compiler setup.
+- Basic repo. structure and setup. Java setup and Java compiler setup.
