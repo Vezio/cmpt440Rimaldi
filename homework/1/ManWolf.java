@@ -78,6 +78,14 @@ public abstract class ManWolf {
   };
 
   /**
+   * Explicitly make the empty constructor 
+   * even though java does this behind the scenes.
+   */
+  public ManWolf() {
+    // EMPTY
+  }
+
+  /**
    * delta
    * 
    * Delta function takes in multiple parameters to perform state transitions.
@@ -100,6 +108,39 @@ public abstract class ManWolf {
    */
   private boolean isValidChar(char letter) {
     return ALPHABET_INDEX.containsKey(letter);
+  }
+
+  /**
+   * isAccepted
+   * 
+   * Check whether or not the given string is accepted.
+   * 
+   * @param state the state of the DFA.
+   * @return true or false as the result of
+   *         proccessing the string at the given state.
+   */
+  private boolean isAccepted(int state) {
+    return ACCEPTANCE_STATES.contains(state);
+  }
+
+  /**
+   * printDFAResults
+   * 
+   * Print the results after processing the string.
+   * Whether or no the string is accepted (a solution),
+   * or is rejected (not a solution).
+   * 
+   * @param stateToCheck the current state of the DFA to pass to
+   *                     the "isAccepted(int)" method to check
+   *                     if the given string was accepted or not.
+   */
+  private void printDFAResults(int stateToCheck) {
+    if (isAccepted(stateToCheck)) {
+      System.out.println("This is a solution.");
+    } 
+    else {
+      System.out.println("This is not a solution.");
+    }
   }
 
   /**
@@ -126,35 +167,26 @@ public abstract class ManWolf {
   }
 
   /**
-   * isAccepted
+   * printTransitionTable
    * 
-   * Check whether or not the given string is accepted.
-   * 
-   * @param state the state of the DFA.
-   * @return true or false as the result of
-   *         proccessing the string at the given state.
+   * Print the entire transition table in a readable 
+   * format. (Not being used in the Driver, just 
+   * used for visuals when requested.)
    */
-  public boolean isAccepted(int state) {
-    return ACCEPTANCE_STATES.contains(state);
-  }
-
-  /**
-   * printDFAResults
-   * 
-   * Print the results after processing the string.
-   * Whether or no the string is accepted (a solution),
-   * or is rejected (not a solution).
-   * 
-   * @param stateToCheck the current state of the DFA to pass to
-   *                     the "isAccepted(int)" method to check
-   *                     if the given string was accepted or not.
-   */
-  private void printDFAResults(int stateToCheck) {
-    if (isAccepted(stateToCheck)) {
-      System.out.println("This is a solution.");
-    } 
-    else {
-      System.out.println("This is not a solution.");
+  public void printTransitionTable() {
+    System.out.println("================================");
+    System.out.println("[w]    [g]   [c]   [n]     state");
+    System.out.println("================================");
+    for(int i = 0; i < transitionTable.length; i++) {
+      for(int j = 0; j < transitionTable[i].length; j++) {
+        if (transitionTable[i][j] == STATES.get("qE")) {
+          System.out.print("["+transitionTable[i][j]+"]  ");
+        } else {
+          System.out.print(" ["+transitionTable[i][j]+"]  ");
+        }
+      }
+      System.out.print(" | q"+i);
+      System.out.println("");
     }
   }
 }

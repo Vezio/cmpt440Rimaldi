@@ -18,6 +18,7 @@ public class DriverDFA extends ManWolf {
    * extend ManWolf's methods.
    */
   public DriverDFA() {
+    // Invoke parent class (ManWolf) constructor
     super();
   }
 
