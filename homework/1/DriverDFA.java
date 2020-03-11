@@ -12,6 +12,8 @@
 public class DriverDFA extends ManWolf {
 
   /**
+   * DriverDFA
+   * 
    * Lets call the super class so we can
    * extend ManWolf's methods.
    */
@@ -20,10 +22,12 @@ public class DriverDFA extends ManWolf {
   }
 
   /**
+   * main
+   * 
    * Check whether or not a user given String
    * is solution to the ManWolf DFA.
    * 
-   * @param args the string to process in our DFA
+   * @param args the string to process in our DFA.
    */
   public static void main(String[] args) {
     DriverDFA dfa = new DriverDFA();
@@ -36,7 +40,7 @@ public class DriverDFA extends ManWolf {
       }
     } 
     catch (IndexOutOfBoundsException e) {
-        System.err.println("Caught IndexOutOfBoundsException: " +  e.getMessage());                  
+        System.err.println("You did not provide a Strings. Please provide one String.");                  
     } 
     finally { 
       if (args.length < 0) {
