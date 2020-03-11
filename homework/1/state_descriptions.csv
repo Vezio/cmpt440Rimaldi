@@ -1,0 +1,11 @@
+state,description
+q0,"Start state, takes 'g', rejects everything else."
+q1,"Takes 'g' and 'n', rejects everything else."
+q2,"Takes 'w','c', rejects everything else."
+q3,"Takes 'g','c', rejects everything else."
+q4,"Takes 'w','g', rejects everything else."
+q5,"Takes 'w','c','n, rejects everything else."
+q6,"Takes 'w','g', rejects everything else."
+q7,"Takes 'g','c', rejects everything else."
+q8,"Takes 'g','n', rejects everything else."
+q9,"Accepting state, takes 'g', rejects everything else."
