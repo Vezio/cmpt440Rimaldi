@@ -31,17 +31,17 @@ public class DriverDFA extends ManWolf {
    * @param args the string to process in our DFA.
    */
   public static void main(String[] args) {
-    DriverDFA dfa = new DriverDFA();
     try {
       if (args.length > 1) {
         throw new IndexOutOfBoundsException("\nYou provided too many Strings. Please provide only one String.");
       } 
       else {
+        DriverDFA dfa = new DriverDFA();
         dfa.process(args[0]);
       }
     } 
     catch (IndexOutOfBoundsException e) {
-        System.err.println("You did not provide a Strings. Please provide one String.");                  
+        System.err.println("You did not provide a String. Please provide one String.");                  
     } 
     finally { 
       if (args.length < 0) {
