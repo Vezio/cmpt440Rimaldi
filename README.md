@@ -20,6 +20,7 @@ A Grammar specifies a rigid rule set for generating valid strings from a specifi
 To run all test cases, please navigate to the directory `cmpt440Rimaldi/project/writeup/code/src`
 
 Then run:
+
 `chmod +x ./run.sh`
 
 `./run.sh`
