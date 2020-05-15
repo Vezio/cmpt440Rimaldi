@@ -2,7 +2,7 @@
   boolean x = true
   boolean y = false
   int z = 0 /* this is ignored! */
-  string = "teststring"
+  string s = "teststring"
   while (x) { /* this is ignored! */
     print(z /* this is ignored! */)
     if (z == 10) {
