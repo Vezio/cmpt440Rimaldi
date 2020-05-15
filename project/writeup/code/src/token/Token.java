@@ -40,7 +40,7 @@ public enum Token {
     TRUE ("true"),
     FALSE ("false"),
     INTEGER ("\\d+"),
-    IDENTIFIER ("\\w+");
+    IDENTIFIER ("[a-z]");
 
     private final Pattern pattern;
 
