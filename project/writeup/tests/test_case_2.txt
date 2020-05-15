@@ -1,0 +1,9 @@
+{
+  print("hello world")
+  int x = 0
+  while (x != 100) {
+    if (x == /* this is ignored! */ 2) {
+      print("test")
+    }
+  }
+}$

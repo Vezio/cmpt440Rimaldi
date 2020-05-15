@@ -1,0 +1,12 @@
+/*
+  Test out our comment handling!
+*/
+
+{
+  /*Comment*/
+  int x =  /*Comment*/ 0
+
+  while(x !=  /*Comment*/ 10) {
+    x = x + 1
+  }
+}$
