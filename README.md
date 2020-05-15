@@ -1,15 +1,5 @@
 # Formal Languages and Computability
 
-## Class Homeworks
-
-### HW 0 
-
-- Basic repo. structure and setup. Java setup and Java compiler setup.
-
-### HW 1
-
-- Fundamentals about QFAs
-
 ## Class Project
 
 ### Abstract
