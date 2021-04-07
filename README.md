@@ -14,6 +14,3 @@ Then run:
 `chmod +x ./run.sh`
 
 `./run.sh`
-
-Video Demo: https://www.youtube.com/watch?v=BEi-j_JivAQ&feature=youtu.be
-
